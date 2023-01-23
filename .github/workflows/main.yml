@@ -1,7 +1,8 @@
 name: Make sure new PRs are sent to development
 
 on:
-  push
+  pull_request:
+    types: [opened]
 
 jobs:
   check-branch:
